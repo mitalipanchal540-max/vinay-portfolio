@@ -20,7 +20,7 @@ section{padding:88px 0}.alt{background:var(--surf)}
 /* header */
 header.top{position:sticky;top:0;z-index:100;background:var(--glass);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
 .bar{display:flex;align-items:center;justify-content:space-between;height:68px;gap:12px}
-.brand{font-family:Georgia,serif;font-weight:700;text-decoration:none;white-space:nowrap}.brand span{color:var(--gold)}
+.brand{font-family:Georgia,serif;font-weight:700;text-decoration:none;white-space:nowrap;display:flex;align-items:center}.brand .logo{height:42px;width:auto;flex:none;margin-right:10px}.brand span{color:var(--gold)}
 #links{display:flex;gap:2px}#links a{display:block;padding:8px 11px;border-radius:8px;font-size:.9rem;text-decoration:none;color:var(--mut)}
 #links a:hover{color:var(--ink);background:rgba(179,139,69,.14)}#links a.active{color:var(--ink);box-shadow:inset 0 -2px var(--gold)}
 .tools{display:flex;gap:8px}
