@@ -67,15 +67,5 @@
     targets.forEach(reveal);
   }
 
-  // contact form: mailto fallback (no backend configured)
-  $('#cform').addEventListener('submit', function (e) {
-    e.preventDefault();
-    var f = e.target.elements;
-    var body = 'Name: ' + f['name'].value + '\nEmail: ' + f['email'].value + '\nRequirement: ' + f['service'].value + '\n\n' + f['message'].value;
-    window.location.href = 'mailto:cavinaypanchal@outlook.com?subject=' +
-      encodeURIComponent('Enquiry: ' + f['service'].value) + '&body=' + encodeURIComponent(body);
-    $('#note').textContent = 'Your email app should open with the message ready to send.';
-  });
-
   $('#year').textContent = new Date().getFullYear();
 })();
